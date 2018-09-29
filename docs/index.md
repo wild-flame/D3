@@ -1,3 +1,3 @@
 # Datum and Data
 
-[Datum](datum.html)
+[ballofstring](ballofstring)
