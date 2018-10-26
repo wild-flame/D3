@@ -219,12 +219,12 @@
             .scale(WIDTH * 1100 / 640)
             .translate([WIDTH / 2, HEIGHT / 2]);
 
-            const china = await d3.json("../data/topo_china_full.json");
+            const china = await d3.json("./data/topo_china_full.json");
 
             // 加载猪瘟的疫情数据
             const parseDate = d3.timeParse("%Y/%m/%d"); // d3.timeParse 为D3@5的用法
             const proj = projection
-            const data = await d3.csv("../data/hog_fever.csv", function (d) {
+            const data = await d3.csv("./data/hog_fever.csv", function (d) {
                 d.date = parseDate(d["时间"])
                 d.location = proj([d["坐标"].split(",")[0], d["坐标"].split(",")[1]])
                 return d;
