@@ -276,7 +276,7 @@
                 .attr("fill", "rgba(255,255,255,0.1)")
                 .attr("d", path)
 
-                nan_hai_svg = await d3.svg("../data/nan_hai.svg")
+                nan_hai_svg = await d3.svg("./data/nan_hai.svg")
                 d3.select("#nan_hai").node().appendChild(nan_hai_svg.documentElement);
 
                 /* === 绘制疫情的相关函数 ===*/
@@ -532,3 +532,4 @@
     </script>
 
 </html>
+
