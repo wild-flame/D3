@@ -5,6 +5,10 @@
         <title>猪瘟</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <!-- Load Babel -->
+        <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <!-- Your custom script here -->
         <script src="./js/lengend.js" charset="utf-8"></script>
         <script src="./js/libs/d3/d3.js" charset="utf-8"></script>
         <script src="./js/libs/topojson.min.js" charset="utf-8"></script>
@@ -195,9 +199,7 @@
         </div>
     </body>
 
-
     <script type="text/javascript">
-
 
         function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
